@@ -29,17 +29,17 @@ Antes de começar, verifique se você possui as seguintes ferramentas instaladas
 
 3. Configure o banco de dados MySQL. Você pode configurar as propriedades do banco de dados no arquivo 
 
-   ```
+   ```bash
    src/main/resources/application.properties
 
 4.	Compile o projeto com o seguinte comando:
-    ```bash
-  mvn clean install
-
-5.	Inicie o servidor de desenvolvimento:
 ```bash
+    mvn clean install
+```
+5.	Inicie o servidor de desenvolvimento:
+  ```bash
   mvn spring-boot:run
- 
+ ```
 
 O servidor agora estará em execução em http://localhost:8080.
 
