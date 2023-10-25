@@ -48,6 +48,7 @@ O servidor agora estará em execução em http://localhost:8080.
 **POST** /api/v1/auth/login: Efetua o login com um nome de usuário e senha fornecidos no corpo da solicitação.
 
 **Exemplo de solicitação de login**
+
 ```
 {
   "username": "seu_usuario",
@@ -56,6 +57,13 @@ O servidor agora estará em execução em http://localhost:8080.
 ```
 
 **Exemplo de resposta de sucesso de login:**
+
+```
+{
+  "username": "seu_usuario",
+  "password": "sua_senha"
+}
+```
 
 **Exemplo de resposta de erro de login:**
 	
