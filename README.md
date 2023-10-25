@@ -33,11 +33,11 @@ Antes de começar, verifique se você possui as seguintes ferramentas instaladas
    src/main/resources/application.properties
 
 4.	Compile o projeto com o seguinte comando:
-  
+    ```bash
   mvn clean install
 
 5.	Inicie o servidor de desenvolvimento:
-  
+```bash
   mvn spring-boot:run
  
 
