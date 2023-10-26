@@ -3,6 +3,11 @@
 
 Este é o repositório do backend para o projeto Ludlabs. Ludlabs é uma aplicação de exemplo que demonstra um serviço de autenticação simples com Spring Boot.
 
+Utilizo o banco de dados H2 para armazenar informações dos usuários. Para facilitar a configuração inicial, foi criado um arquivo data.sql que contém as informações necessárias de usuário e senha que foram solicitadas no technical challenge.
+
+Usuário padrão: magalu
+Senha: m@galu123
+
 ## Como Usar
 
 Siga as instruções abaixo para configurar e executar o backend Ludlabs em sua máquina local.
@@ -13,7 +18,7 @@ Antes de começar, verifique se você possui as seguintes ferramentas instaladas
 
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [Maven](https://maven.apache.org/download.cgi)
-- [MySQL](https://dev.mysql.com/downloads/mysql/)
+- [H2](https://www.h2database.com/html/main.html)
 
 ### Instalação
 
@@ -27,16 +32,11 @@ Antes de começar, verifique se você possui as seguintes ferramentas instaladas
      ``` bash 
      cd ludlabs-backend
 
-3. Configure o banco de dados MySQL. Você pode configurar as propriedades do banco de dados no arquivo 
-
-   ```bash
-   src/main/resources/application.properties
-
-4.	Compile o projeto com o seguinte comando:
+3.	Compile o projeto com o seguinte comando:
 ```bash
     mvn clean install
 ```
-5.	Inicie o servidor de desenvolvimento:
+4.	Inicie o servidor de desenvolvimento:
   ```bash
   mvn spring-boot:run
  ```
