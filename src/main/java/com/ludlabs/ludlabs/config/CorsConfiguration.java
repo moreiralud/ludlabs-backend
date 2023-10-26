@@ -13,9 +13,9 @@ public class CorsConfiguration {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/v1/**") // Mapeia para as URLs da sua API
-                        .allowedOrigins("http://localhost:3000") // Permitir solicitações do seu aplicativo React
-                        .allowedMethods("GET", "POST", "PUT", "DELETE"); // Métodos permitidos
+                registry.addMapping("/api/v1/**")
+                        .allowedOrigins("http://localhost:3000")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
     }
